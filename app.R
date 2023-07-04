@@ -23,13 +23,11 @@ ui <- page_sidebar(
   sidebar = sidebar(
     title = "controls",
     width = "400px",
-    pickerInput(
+    selectInput(
       inputId = "person",
       label = "候选人", 
       choices = staff,
       multiple = TRUE,
-      options = list(
-        `actions-box` = TRUE)
     ),
     actionButton("action", label = "Roll"),
   ),
